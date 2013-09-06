@@ -26,10 +26,8 @@ class Editor(object):
 
         # archivo que contiene la configuración del editor
         with open('editor.conf') as config:
-            for line in config:
-
             # itera sobre cada línea del archivo de configuración
-            #for line in config.readlines():
+            for line in config.readlines():
                 # mira si la línea empieza por "ENCODING"
                 if line.startswith('ENCODING'):
                     # Las siguientes 2 variables almacenan el rango de posición
